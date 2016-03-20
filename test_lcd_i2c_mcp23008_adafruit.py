@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # Example script to show usage of MCP230xx GPIO extender to drive character LCD.
 
+import sys
+sys.path.append('./lib')
 from Adafruit_CharLCD import Adafruit_CharLCD
 from Adafruit_MCP230xx import MCP230XX_GPIO
 

@@ -1,5 +1,7 @@
+#!/usr/bin/python
+
 import sys
-sys.path.append('/home/pi/Adafruit-Raspberry-Pi-Python-Code/Adafruit_CharLCD')
+sys.path.append('./lib')
 from Adafruit_CharLCD import Adafruit_CharLCD
 import pcf8574gpio as PCF
 
