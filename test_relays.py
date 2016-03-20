@@ -98,11 +98,18 @@ def print_status(channels=None):
     for channel in channels:
         channel.print_status()
 
-if __name__ == "__main__":
+def main():
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BOARD)
 
     for channel in CHANNELS:
         channel.init()
         channel.test()
+
+def cleanup():
+    GPIO.cleanup()
+
+if __name__ == "__main__":
+    main()
+    cleanup()
 
